@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  background-color: steelblue;
+}
+#title, #app-type {
+  text-align: center;
+  color: white;
+}
+#content, #editor {
+  display: block;
+  margin: auto;
+  max-width: 70rem;
+}
+.question-container {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem 0 2rem 0;
+  box-shadow: 0 0 .5rem;
+}
+.options-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.option {
+  margin: 1rem;
+}
+.option-circle {
+  background-color: #eee;
+  width: 17vmax;
+  height: 17vmax;
+  min-width: 7rem;
+  min-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+.option-circle i {
+  font-size: 10vmax;
+}
+.selected-option {
+  border: .5rem solid lightgreen;
+}
+#current-result-display {
+  position: fixed;
+}
+.result-display {
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+.result-display>* {
+  margin: .3rem 1rem 0 1rem;
+}
+.result-display select {
+  background-color: inherit;
+  color: inherit;
+  padding: .2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.editor-question {
+  max-width: 40rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: none;
+}
+.editor-question div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editor-question input {
+  width: 3.5rem;
+  padding: .3rem;
+}
+#edit-collapse {
+  cursor: pointer;
+}

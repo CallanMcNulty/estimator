@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/estimate.js"></script>
+    <script src="js/result-display.js"></script>
+    <script src="js/questions-display.js"></script>
+    <script src="js/option-editor.js"></script>
+    <script src="js/controller.js"></script>
+    <title>Estimator</title>
+  </head>
+  <body><h1 id="title">Estimate the cost of your app</h1><h3 id="app-type"></h3></body>
+  <script type="text/javascript">
+    var data = [];
+    var selectedDataIndex = 0;
+    var content = undefined;
+    function getData(filename) {
+      $.ajax({
+        url: "options/"+filename,
+        type: "GET",
+        dataType: "json",
+        error: (x,s,e) => console.log(e),
+        success: (result) => {
+          data.push(result);
+          data[data.length-1].questions.forEach(q => q.options.forEach(o => o.selected = false));
+          // if(data.length-1===selectedDataIndex) {
+            changeViewedEstimate(selectedDataIndex);
+            // updateResult();
+            // $("body").append(createQuestionsDisplay(data[selectedDataIndex].questions));
+            // $("body").append(createOptionEditor(data[selectedDataIndex].questions));
+            // $("#app-type").text(data[selectedDataIndex].name+" - "+data[selectedDataIndex].description);
+          // }
+        }
+      });
+    }
+    $.ajax({
+      url: "getFileNames.php",
+      type: "GET",
+      dataType: "json",
+      error: (x,s,e) => console.log(e),
+      success: (result) => {
+        result.forEach(r => getData(r));
+      }
+    });
+  </script>
+<html>

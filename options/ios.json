@@ -1,0 +1,45 @@
+{
+  "name": "iOS",
+  "description": "A front-end for an iPhone/iPad app",
+  "designerDayRate": 450,
+  "developerDayRate": 450,
+  "questions": [
+    {
+      "text": "Look, you can have multiple estimators.",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Use the dropdown at the top to change app type.",
+          "days": 70,
+          "iconType": "fa",
+          "icon": "heart"
+        },
+        {
+          "text": "For extra options, just edit the JSON file.",
+          "days": 30,
+          "iconType": "fa",
+          "icon": "car"
+        },
+        {
+          "text": "Add more JSON files for more types of app.",
+          "days": 50,
+          "iconType": "fa",
+          "icon": "lightbulb-o"
+        },
+        {
+          "text": "Anyone with server access can do it.",
+          "days": 50,
+          "iconType": "fa",
+          "icon": "ship"
+        },
+        {
+          "text": "It's so easy!",
+          "days": 70,
+          "iconType": "fa",
+          "icon": "trophy"
+        }
+      ]
+    }
+  ]
+}

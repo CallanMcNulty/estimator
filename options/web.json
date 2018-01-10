@@ -1,0 +1,411 @@
+{
+  "name": "Web",
+  "description": "A web app or back-end to a mobile app",
+  "designerDayRate": 450,
+  "developerDayRate": 450,
+  "questions": [
+    {
+      "text": "How big is your app?",
+      "selection": "single",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Small",
+          "days": 10,
+          "iconType": "fa",
+          "icon": "thermometer-empty"
+        },
+        {
+          "text": "Medium",
+          "days": 30,
+          "iconType": "fa",
+          "icon": "thermometer-half"
+        },
+        {
+          "text": "Large",
+          "days": 50,
+          "iconType": "fa",
+          "icon": "thermometer-full"
+        }
+      ]
+    },
+    {
+      "text": "What level of UI would you like?",
+      "selection": "single",
+      "displayed": true,
+      "options": [
+        {
+          "text": "MVP",
+          "percentage": 30,
+          "iconType": "mat",
+          "icon": "star_border"
+        },
+        {
+          "text": "Basic",
+          "percentage": 50,
+          "iconType": "mat",
+          "icon": "star_half"
+        },
+        {
+          "text": "Polished",
+          "percentage": 70,
+          "iconType": "mat",
+          "icon": "star"
+        }
+      ]
+    },
+    {
+      "text": "Users & Accounts",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Email / Password Sign Up",
+          "days": 1,
+          "iconType": "mat",
+          "icon": "email"
+        },
+        {
+          "text": "Facebook Sign Up",
+          "days": 2,
+          "iconType": "fa",
+          "icon": "facebook-official"
+        },
+        {
+          "text": "Twitter Sign Up",
+          "days": 2,
+          "iconType": "fa",
+          "icon": "twitter"
+        },
+        {
+          "text": "Google Sign Up",
+          "days": 2,
+          "iconType": "fa",
+          "icon": "google-plus"
+        },
+        {
+          "text": "LinkedIn Sign Up",
+          "days": 2,
+          "iconType": "fa",
+          "icon": "linkedin"
+        },
+        {
+          "text": "Github Sign Up",
+          "days": 2,
+          "iconType": "fa",
+          "icon": "github"
+        },
+        {
+          "text": "User Invitation Emails",
+          "days": 2,
+          "iconType": "mat",
+          "icon": "contact_mail"
+        },
+        {
+          "text": "Multi-tenant Accounts",
+          "days": 3,
+          "iconType": "mat",
+          "icon": "group"
+        },
+        {
+          "text": "Subdomains",
+          "days": 4,
+          "iconType": "fa",
+          "icon": "sitemap"
+        },
+        {
+          "text": "Custom Domains",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "domain"
+        }
+      ]
+    },
+    {
+      "text": "User Generated Content",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Dashboard",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "dashboard"
+        },
+        {
+          "text": "Activity Feed",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "rss_feed"
+        },
+        {
+          "text": "File Uploading",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "file_upload"
+        },
+        {
+          "text": "User Profiles",
+          "days": 2,
+          "iconType": "mat",
+          "icon": "account_circle"
+        },
+        {
+          "text": "Transactional Emails",
+          "days": 2,
+          "iconType": "mat",
+          "icon": "send"
+        },
+        {
+          "text": "Tags",
+          "days": 2,
+          "iconType": "mat",
+          "icon": "local_offer"
+        },
+        {
+          "text": "Ratings or reviews",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "stars"
+        },
+        {
+          "text": "Audio/Video processing",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "music_video"
+        },
+        {
+          "text": "Free text searching",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "find_in_page"
+        }
+      ]
+    },
+    {
+      "text": "Dates & Locations",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Calendaring",
+          "days": 7,
+          "iconType": "mat",
+          "icon": "date_range"
+        },
+        {
+          "text": "Display of Map data / Geolocation",
+          "days": 3,
+          "iconType": "mat",
+          "icon": "map"
+        },
+        {
+          "text": "Display of custom map markers/regions",
+          "days": 3,
+          "iconType": "mat",
+          "icon": "place"
+        },
+        {
+          "text": "Bookings",
+          "days": 8,
+          "iconType": "mat",
+          "icon": "event"
+        }
+      ]
+    },
+    {
+      "text": "Social & Engagement",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Messaging",
+          "days": 6,
+          "iconType": "mat",
+          "icon": "message"
+        },
+        {
+          "text": "Forums or commenting",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "forum"
+        },
+        {
+          "text": "Social Sharing",
+          "days": 2,
+          "iconType": "mat",
+          "icon": "share"
+        },
+        {
+          "text": "Push to Facebook Open Graph",
+          "days": 5,
+          "iconType": "fa",
+          "icon": "facebook"
+        }
+      ]
+    },
+    {
+      "text": "Billing & eCommerce",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Subscription plans",
+          "days": 8,
+          "iconType": "mat",
+          "icon": "autorenew"
+        },
+        {
+          "text": "Payment processing",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "credit_card"
+        },
+        {
+          "text": "Shopping Cart",
+          "days": 8,
+          "iconType": "mat",
+          "icon": "shopping_cart"
+        },
+        {
+          "text": "User Marketplace",
+          "days": 12,
+          "iconType": "mat",
+          "icon": "store_mall_directory"
+        },
+        {
+          "text": "Product Management",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "perm_data_setting"
+        }
+      ]
+    },
+    {
+      "text": "Admin, Feedback & Analytics",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "CMS Integration",
+          "days": 7,
+          "iconType": "mat",
+          "icon": "edit"
+        },
+        {
+          "text": "User Admin pages",
+          "days": 3,
+          "iconType": "mat",
+          "icon": "supervisor_account"
+        },
+        {
+          "text": "Moderation / Content Approval",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "done"
+        },
+        {
+          "text": "Intercom",
+          "days": 3,
+          "iconType": "mat",
+          "icon": "headset_mic"
+        },
+        {
+          "text": "Usage Analytics",
+          "days": 3,
+          "iconType": "mat",
+          "icon": "timeline"
+        },
+        {
+          "text": "Crash Reporting",
+          "days": 0,
+          "iconType": "mat",
+          "icon": "report_problem"
+        },
+        {
+          "text": "Performance Monitoring",
+          "days": 1,
+          "iconType": "mat",
+          "icon": "equalizer"
+        },
+        {
+          "text": "Multilingual Support",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "language"
+        }
+      ]
+    },
+    {
+      "text": "External APIs and Integrations",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "Connect to one or more third party services",
+          "days": 6,
+          "iconType": "mat",
+          "icon": "settings_input_composite"
+        },
+        {
+          "text": "An API for others to integrate with your app",
+          "days": 8,
+          "iconType": "mat",
+          "icon": "http"
+        },
+        {
+          "text": "SMS Messaging",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "sms"
+        },
+        {
+          "text": "Phone Number Masking",
+          "days": 4,
+          "iconType": "mat",
+          "icon": "phonelink_erase"
+        }
+      ]
+    },
+    {
+      "text": "Security",
+      "selection": "multiple",
+      "displayed": true,
+      "options": [
+        {
+          "text": "SSL Certificate based Security",
+          "days": 3,
+          "iconType": "fa",
+          "icon": "certificate"
+        },
+        {
+          "text": "DoS protection",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "lock"
+        },
+        {
+          "text": "Two Factor Authentication",
+          "days": 5,
+          "iconType": "mat",
+          "icon": "done_all"
+        }
+      ]
+    },
+    {
+      "text": "App Specific Development",
+      "selection": "multiple",
+      "displayed": false,
+      "options": [
+        {
+          "text": "App Specific Development",
+          "days": 0
+        },
+        {
+          "text": "Project Manager",
+          "days": 0
+        }
+      ]
+    }
+  ]
+}
